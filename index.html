@@ -50,7 +50,7 @@
           <h1 class="hero-title">Эффективные решения <br>
               для вашего бизнеса</h1>
 
-          <a href="#" class="button link">Заказать услугу</a>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -103,18 +103,36 @@
       </section>
 
       <!-- What we do -->
+
       <section class="section padding-bottom">
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-list list">
-          <li class="item"><img src="./image/img1.jpg" alt="Программист за работой" width="370" class="image"></li>
-          <li class="item"><img src="./image/img2.jpg" alt="Программист разрабатывает приложения" width="370" class="image"></li>
-          <li class="item"><img src="./image/img3.jpg" alt="Веб-дизайнер работает на планшете" width="370" class="image"></li>
+          <li class="item">
+            <div class="work-case">
+              <img src="./image/img1.jpg" alt="Программист за работой" width="370" class="image">
+              <p class="label">Десктопные приложения</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <div class="work-case">
+              <img src="./image/img2.jpg" alt="Программист разрабатывает приложения" width="370" class="image">
+              <p class="label">Мобильные приложения</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="work-case">
+              <img src="./image/img3.jpg" alt="Веб-дизайнер работает на планшете" width="370" class="image">
+              <p class="label">Дизайнерские решения</p>
+            </div>
+          </li>
         </ul>
         </div>
       </section>
 
       <!-- Team -->
+
       <section class="section team">
         <div class="container">
         <h2 class="section-title">Наша команда</h2>
@@ -316,7 +334,9 @@
       </div>
       </section>
     </main>
+
     <!-- Footer -->
+
     <footer id="contacts-section" class="footer">
       <div class="container">
         <div class="logo-address">
@@ -367,5 +387,14 @@
        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close></button>
+      </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+    
   </body>
 </html>
